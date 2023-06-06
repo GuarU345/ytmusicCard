@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>SPOTIFY CARD</title>
+</head>
+<body>
+    <main class="main-body">
+        <section class="card"> 
+            <header>
+                <span><i class="bi bi-chevron-down"></i></span>
+                <span><i class="bi bi-three-dots-vertical"></i></span>
+            </header>
+
+            <article class="img-article-container">
+                <picture class="img-container">
+                    <img src="./images/kdotalbum.jpg" alt="image of album">
+                </picture>
+            </article>
+
+            <div class="options-container">
+                <article class="options">
+                    <span><i class="bi bi-hand-thumbs-down"></i></span>
+                    <h3 id="title-song"></h3>
+                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                </article>
+            </div>
+
+            <article class="author-container">
+                <h5 id="author-song"></h5>
+            </article>
+
+            <article class="progress-container">
+                <input class="spotify-range" type="range"  min="0" max="100" value="50">
+            </article>
+
+            <div class="controls-container">
+                <article class="controls">
+                    <span><i class="bi bi-shuffle"></i></span>
+                    <span><i class="bi bi-skip-start-fill"></i></i></span>
+                    <span><i class="bi bi-play-circle"></i></span>
+                    <span><i class="bi bi-skip-end-fill"></i></span>
+                    <span><i class="bi bi-repeat"></i></span>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    background-color: black;
+    padding: 5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-body{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    background-color: #a5a4a4;
+    width: 400px;
+    height: 700px;
+    grid-column: 2;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    padding-top: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.img-article-container{
+    padding-top: 2rem;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 70%;
+}
+
+.options-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    color: white;
+}
+
+.progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotify-range {
+    -webkit-appearance: none;
+    width: 280px;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5rem;
+  }
+  
+  /* Estilos para el rango deslizado */
+  .spotify-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: white;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  
+  /* Estilos para el rango en navegadores que no son WebKit */
+  .spotify-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #1db954;
+    cursor: pointer;
+  }
+  
+  /* Cambio de color del rango cuando está activo */
+  .spotify-range::-moz-range-thumb:active,
+  .spotify-range::-webkit-slider-thumb:active {
+    background: #1ed760;
+  }
+  
+  /* Cambio de color del rango al ser deslizado */
+  .spotify-range::-moz-range-thumb:hover,
+  .spotify-range::-webkit-slider-thumb:hover {
+    background: #1ed760;
+  }
+  
+  /* Cambio de color del rango al ser deslizado en navegadores que no son WebKit */
+  .spotify-range::-webkit-slider-thumb:hover {
+    background: #1ed760;
+  }
+  
+  /* Cambio de color del rango al ser arrastrado */
+  .spotify-range:active::-moz-range-thumb,
+  .spotify-range:active::-webkit-slider-thumb {
+    background: #1ed760;
+  }
+
+.controls-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.controls{
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
